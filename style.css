@@ -1,0 +1,96 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #0D1B2A, #1B263B, #415A77);
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.container {
+  margin-top: 80px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.search-box {
+  margin: 25px auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.search-box input {
+  padding: 14px;
+  width: 260px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+}
+
+.search-box button {
+  background: #E0E1DD;
+  border: none;
+  padding: 14px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  transform: scale(1.1);
+}
+
+.weather-card {
+  background: rgba(255, 255, 255, 0.15);
+  margin: 30px auto;
+  padding: 30px;
+  width: 85%;
+  max-width: 400px;
+  border-radius: 20px;
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); /* Safari support */
+
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  animation: fadeIn 0.7s ease forwards;
+}
+
+.weather-main img {
+  width: 110px;
+}
+
+.weather-main h3 {
+  font-size: 38px;
+  margin: 10px 0;
+}
+
+.details p {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.error {
+  color: #ffdddd;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
